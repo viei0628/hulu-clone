@@ -43,10 +43,12 @@
   flex-direction: column;
   cursor: pointer;
   width: 100px;
+  margin-top: 20px;
 }
 
 .header__icons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
 }
