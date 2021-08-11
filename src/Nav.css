@@ -1,9 +1,11 @@
 .nav {
   display: flex;
+  flex-wrap: wrap;
   color: white !important;
   overflow-x: scroll;
   padding: 10px;
   padding-left: 40px !important;
+  justify-content: center;
 }
 .nav::-webkit-scrollbar {
   display: none;
@@ -21,6 +23,7 @@
   font-weight: 500;
   opacity: 0.7;
   transition: transform 50ms ease-out;
+  margin: 20px;
 }
 
 .nav > h2:hover {
