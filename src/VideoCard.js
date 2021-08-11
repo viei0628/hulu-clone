@@ -19,10 +19,12 @@ const VideoCard = forwardRef(({ movie }, ref) => {
       />
       <h2>{movie.title || movie.original_name}</h2>
       <p className="videoCard__stats">
-        {movie.media_type && `${movie.media_type}`}
+        {/* {movie.media_type && `${movie.media_type}`} */}
         {movie.release_date || movie.first_air_date}
-        <ThumbUpIcon />
-        {movie.vote_count}
+        <div>
+          <ThumbUpIcon className="thumbsUp" />
+          {movie.vote_count}
+        </div>
       </p>
     </div>
   );
